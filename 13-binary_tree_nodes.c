@@ -10,17 +10,17 @@
 
 size_t binary_tree_nodes(const binary_tree_t *tree)
 {
-    int childs;
+	int childs;
 
 	if (!tree)
 		return (0);
 
 	if (tree->left || tree->right)
 	{
-        childs = binary_tree_nodes(tree->left) + binary_tree_nodes(tree->right) + 1;
+		childs = binary_tree_nodes(tree->left) + binary_tree_nodes(tree->right) + 1;
 
 		return (childs);
 	}
 
-    return (0);
+	return (0);
 }
